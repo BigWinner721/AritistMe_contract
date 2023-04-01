@@ -64,6 +64,7 @@ contract ArtistMe is
 
         listingPrice = 0 ether;
         sharePercent = 50;
+        regstate[address(0)] == true;
     }
 
     function _authorizeUpgrade(
@@ -106,7 +107,6 @@ contract ArtistMe is
         require(regstate[_parent] == true, "parent shold be registered!");
         if (regstate[msg.sender] == false) {
             parent[msg.sender] = _parent;
-            
         }
         _tokenIds.increment();
         uint256 newTokenId = _tokenIds.current();
