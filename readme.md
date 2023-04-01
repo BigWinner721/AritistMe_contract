@@ -1,9 +1,18 @@
 #### config
 
+```
 PlatonRPC: `https://openapi2.platon.network/rpc`
+```
+
 ChianID:210425
+
+```
 Token Symbol: LAT
-contract address:0xC38Ff5Bb9118465e130Ef53C18a9B00F4497CBE7
+```
+
+contractaddress:0xC38Ff5Bb9118465e130Ef53C18a9B00F4497CBE7
+
+````
 
 ### e.g.
 
@@ -21,4 +30,4 @@ await ArtistMe.createTokenAndList(
 );
 //listingprice ，default is 0
 //parentAddress
-```
+````
